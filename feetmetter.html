@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="swapfeet"></p>
+<p id="swapmetter"></p>
+<script>
+    let feet = Number(prompt(' nhap so feed'))
+    let metter = Number(prompt( ' nhap so metter '))
+    function fSwapMetter(f)
+    {
+        return f*0.305
+    }
+    document.getElementById('swapfeet').innerHTML = feet +"feet" + "=" + fSwapMetter(feet) + " metter ";
+    function MSwapFeet(m)
+    {
+        return m*3.279
+    }
+    document.getElementById('swapmetter').innerHTML = metter + " metter "+ " = " + MSwapFeet(metter) + "  feet";
+</script>
+
+</body>
+</html>
